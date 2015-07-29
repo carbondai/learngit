@@ -1,1 +1,1 @@
-It's a text of test for learn git.
+It's a text of test for learning git.
