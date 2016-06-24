@@ -1,0 +1,7 @@
+一、从github仓库克隆到本地
+（1）创建SSH Key
+ssh-keygen -t rsa -C "daixin2015@icloud.com"
+将～/.ssh/id_rsa.pub中的公钥上传到github账户中
+（2）从仓库克隆一个本地库
+git clone git@github.com:carbondai/dcloud.git
+（github中的repositories名加上后缀.git）
