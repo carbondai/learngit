@@ -9,3 +9,5 @@ git clone git@github.com:carbondai/dcloud.git
 git add时乱码，输入git config --global core.quotepath false
 git log时乱码，输入git config --global gui.encoding utf-8
 避免服务器上出现乱码，输入git config --global i18n.commitencoding utf-8
+三、修改提交信息的编辑器
+git config --global core.editor vim
