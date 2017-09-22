@@ -11,3 +11,8 @@ git log时乱码，输入git config --global gui.encoding utf-8
 避免服务器上出现乱码，输入git config --global i18n.commitencoding utf-8
 三、修改提交信息的编辑器
 git config --global core.editor vim
+四、查看某作者或某关键字相关的提交
+git log --author="Author Name"
+git log --grep="keyword" dir/filename
+五、应用别人的patch
+git am dir/*.patch
