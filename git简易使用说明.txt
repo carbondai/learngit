@@ -5,14 +5,23 @@ ssh-keygen -t rsa -C "daixin2015@icloud.com"
 （2）从仓库克隆一个本地库
 git clone git@github.com:carbondai/dcloud.git
 （github中的repositories名加上后缀.git）
+
 二、中文乱码问题的解决
 git add时乱码，输入git config --global core.quotepath false
 git log时乱码，输入git config --global gui.encoding utf-8
 避免服务器上出现乱码，输入git config --global i18n.commitencoding utf-8
+
 三、修改提交信息的编辑器
 git config --global core.editor vim
+
 四、查看某作者或某关键字相关的提交
 git log --author="Author Name"
 git log --grep="keyword" dir/filename
+
 五、应用别人的patch
 git am dir/*.patch
+
+六、删除某次指定提交记录
+找到要删除的提交之前一次记录commitid，执行变基操作
+git rebase -i commitid
+在弹出的文本文件中将要删除的记录前面pick改为drop，保存即可
